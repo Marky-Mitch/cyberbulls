@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Cyber Bulls' });
+  
+  //connect to db and find list of events
+  res.render('events', { title: 'Events' });
 });
 
 module.exports = router;
