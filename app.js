@@ -10,7 +10,7 @@ var users = require('./routes/users');
 var events = require('./routes/events');
 var resources = require('./routes/resources');
 var play = require('./routes/play')
-var api = require('.routes/api')
+var api = require('./routes/api')
 
 var app = express();
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -24,6 +24,7 @@ app.set('view engine', 'jade');
 //app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 

@@ -2,10 +2,28 @@ extends layout
 
 block content
   div(class='container')
+    h5 This area of the site will be used in the live sessions to input codes found during the activities.
     div(class='jumbotron nameSetter')
       h1 Enter a username below to get started
-        input(class='form-control nameField', type='text', name='username', placeholder="Enter name here")
-        br
-        button(class='btn btn-primary submitButton', onclick='setUsername()') Submit 
+      br
+      input(class='form-control nameField', type='text', name='username', placeholder="Enter name here")
+      br
+      button(class='btn btn-primary submitButton', onclick='setUsername()') Submit 
+  br
+  div(class='jumbotron flagGuesser cloaked')
+      h1 Enter flag codes below
+      h4.userTitle
+      br
+      div(class='feedback')
+        h6(class='feedbackHeader') No guesses yet
+      input(class='form-control flagField', type='text', name='flagname', placeholder="Enter the flag name (including FLAG)")
+      br
+      button(class='btn btn-success guessButton', onclick='guessFlag()') Guess 
+      br
+      br      
+      div(class='scoreBoard')
+      br
+      div(class='refreshButtonHolder')
+        button(class='btn btn-info', onclick='updateScores()') Refresh scores
 
   script(src='/javascripts/play.js')
