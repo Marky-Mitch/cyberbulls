@@ -9,6 +9,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var events = require('./routes/events');
 var resources = require('./routes/resources');
+var play = require('./routes/play')
+var api = require('.routes/api')
 
 var app = express();
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -27,7 +29,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/events', events);
-app.use('/resources',resources)
+app.use('/resources',resources);
+app.use('/play', play);
+app.use('/api',api);
 
 
 // catch 404 and forward to error handler
