@@ -14,7 +14,13 @@ exports.seed = function(knex, Promise) {
         {value: 'FLAGLSWPJ8',session: 1},
         {value: 'FLAGQNKS81',session: 1},
         {value: 'FLAGSKWPCY',session: 1},
-        {value: 'FLAG723ME1',session: 1}
+        {value: 'FLAG723ME1',session: 1},
+        {value: 'FLAG286FWK',session: 2},
+        {value: 'FLAGHFHF71',session: 2},
+        {value: 'FLAGYPAQ1Q',session: 2},
+        {value: 'FLAG20DKEL',session: 2},
+        {value: 'FLAGPMFOR3',session: 2}
+        
       ]);
     });
 };
