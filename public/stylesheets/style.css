@@ -10,3 +10,21 @@ a {
 .cloaked { 
   display: none;
 }
+
+li {
+  list-style-type: none;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+.card {
+  max-width: 100%;
+}
+.card-text {
+  word-wrap: break-word;
+}

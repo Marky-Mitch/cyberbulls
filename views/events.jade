@@ -2,19 +2,21 @@ extends layout
 
 block content
   div(class='container')
-    table(class='table')
-      tr.info
-        th Date
-        th Time
-        th Topic
-        th Info
-      tr
-        td 30 Jan
-        td 1200-1300
-        td Web security 
-        td A meetup to discuss web security exploits with a particular focus on input based attacks. Bring along any inetresting problems or resources you have found and we will discuss them as a group.
-      tr
-        td 27 Feb
-        td 1200-1300
-        td Feburary meetup
-        td TBD
+    table.table.table-bordered
+      thead.thead-info
+        tr.table-info
+          th Date
+          th Time
+          th Topic
+          th Info
+      tbody
+        tr
+          td 30 Jan
+          td 1200-1300
+          td Web security 
+          td A meetup to discuss web security exploits with a particular focus on input based attacks. Bring along any inetresting problems or resources you have found and we will discuss them as a group.
+        tr
+          td 27 Feb
+          td 1200-1300
+          td Feburary meetup
+          td TBD

@@ -2,6 +2,20 @@ var express = require('express');
 var router = express.Router();
 const knex = require('knex')(require('../knexfile'))
 
+//POST add resource
+router.post('/addResource', function(req,res,next) {
+  //add resource info to DB
+  console.log('back end add resporce attempt');
+  console.log(req.body);
+  if(req.body.title && req.body.text && req.body.link && req.body.page) {
+      //have all the info we need
+      return knex('resource').insert({title: req.body.title, text: req.body.text, link: req.body.link, votes: 0, page:req.body.page}).then(() => {
+        res.json({valid: true});
+    
+      });
+  }
+});
+
 /* POST set user */
 router.post('/setUser', function(req, res, next) {
     console.log('got set name request')

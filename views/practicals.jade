@@ -1,0 +1,91 @@
+extends layout
+
+block content
+  div(class='container')
+    h2 Listed below are practical activities and related resources from previous CyberBulls sessions. Take the time to try a few out, and pick up some new cyber skills along the way.
+    div.card
+      div.card-header
+        h3 Session one - linux fundamentals
+      div.card-body.p-3 
+        p Session one worksheet
+          a(href='/documents/session1.pdf')  link
+        p Web terminal emulator (for use with worksheet)
+          a(href='http://www.webminal.org/')  link
+        p Hints for the Challenge
+          a(href='/documents/session1hintz.pdf')  link
+        p Introduction to linux for complete beginners
+          a(href='http://www.ee.surrey.ac.uk/Teaching/Unix/')  link
+        p Linux command line guide 
+          a(href='http://linuxcommand.org/')  link
+        p Cheat sheet for common linux commands
+          a(href='https://learncodethehardway.org/unix/bash_cheat_sheet.pdf')  link
+        p Online interactive command line wargame
+          a(href='http://overthewire.org/wargames/bandit/')  link
+    br
+    div.card
+      div.card-header
+        h3 Session two - network reconaissance
+      div.card-body.p-3
+        p Session two worksheet
+          a(href='/documents/session2.pdf')  link
+        p NMap download link
+          a(href='https://nmap.org/download.html')  link  
+         p Challenge server IP 35.176.93.174  
+        p NMap Cheat Sheet
+          a(href='https://www.stationx.net/nmap-cheat-sheet/')  link
+    br
+    div.card 
+      div.card-header
+        h3 Session three - advanced network reconaissance
+      div.card-body.p-3
+        p Session three worksheet
+          a(href='/documents/session3.pdf')  link
+        p Wireshark download link - do before session
+          a(href='https://www.wireshark.org/#download')  link   
+        p Telnet packet capture
+          a(href='/documents/telnet.pcap')  link
+        p HTTP packet capture
+          a(href='/documents/http.trace')  link
+        p Wireshark filter cheat sheet
+          a(href='http://packetlife.net/media/library/13/Wireshark_Display_Filters.pdf')  link
+    br
+    div.card
+      div.card-header
+        h3 Session four - Wireshark Blue Team ops practical
+      div.card-body.p-3
+        p Session four worksheet
+          a(href='/documents/session4.pdf')  link
+        p Packet capture for the Challenge
+          a(href='/documents/attack.pcap.gz')  link
+        p Answer sheet (link enabled after session)
+          a(href='')  link      
+    br
+    div.card
+      div.card-header
+        h3 Session five - Log analysis Blue Team ops practical
+      div.card-body.p-3
+        p Session five worksheet
+          a(href='/documents/session5.pdf')  link
+        p Log files for the Challenge
+          a(href='/documents/sanitized_logs.zip')  link
+        p Log file cheat sheet
+          a(href='https://zeltser.com/media/docs/security-incident-log-review-checklist.pdf')  link
+    br
+    div.card
+      div.card-header
+        h3 Session six - Intro to Web and input based attacks
+      div.card-body.p-3
+        p Session six worksheet
+          a(href='/documents/session6.pdf')  link
+        p SQL Injection Demo
+          a(href='https://www.codebashing.com/sql_demo')  link
+        p XSS Challenge
+          a(href='https://xss-game.appspot.com/')  link
+        p Web Develoment Primer
+          a(href='https://www.htmlgoodies.com/primers/html/article.php/3683861')  link 
+        p SQL Injection sheet sheet
+          a(href='https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/')  link  
+        p XSS Cheat sheet
+          a(href='https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet')  link 
+        p OWASP Top Ten Web Threats
+          a(href='https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf')  link
